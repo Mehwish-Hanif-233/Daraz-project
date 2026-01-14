@@ -1,0 +1,292 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daraz-Online Shopping</title>
+</head>
+<style>
+   body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(186, 247, 226);
+   }
+   .navbar{
+    background-color: orangered;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100px;
+    border-radius: 20px;
+   }
+   .search-bar input{
+  width: 300px;
+  height: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+   }
+   .top-links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;}
+    .top-links a{  
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+   }
+   .button:hover{
+    background-color: cadetblue;
+   }
+   .footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+   }
+   .footer-column{
+    width: 45%;
+   
+   }
+
+</style>
+<body>
+  
+    <div class="navbar">
+      <h1>DARAZ</h1>
+      <div  class="search-bar">
+        <input type="text" placeholder="Search ON DARAZ">
+      </div>
+      <div class="top-links">
+        <a href="#">SAVE MORE IN  DARAZ</a>
+        <a href="#">SALL ON  DARAZ</a>
+        <a href="#">HELP & SUPPORT</a>
+        <a href="#">LOGIN</a>
+        <a href="#">SING UP</a>
+       </div> </div>
+    <div>
+    <img  style="width:900px;height:500px;text-align: right; justify-content: center; margin-left: 50px;" src="{% static 'images/tthings.jpg' %}" alt="tthings.jpg">
+     <img style="height: 500px;" src="{% static 'images/SQR code.jpg' %}" alt="SQR code.jpg.jpg">
+   </div>
+    <img style="margin-left: 50px; width:1250px;" src="{% static 'images/backto_school.jpg' %}" alt="backto_school.jpg">
+    <h2>Flash Sale</h2>
+   <div  style="background-color: antiquewhite;">
+     <div  style=" background-color: antiquewhite; border: 2px solid black; ">
+       <h1 style="color: red;margin: 10px;">On sale Now </h1> 
+    </div>
+     <div  style=" display: flex; justify-content: space-around; align-items: center;">
+      <div>
+      <img style="width:270px;height:350px;" src="{% static 'images/cherry .jpg' %}" alt="cherry.jpg"  >
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;Durex Very Cherry Lube<br>&nbsp;&nbsp;&nbsp;&nbsp;50ml<br>&nbsp;&nbsp;&nbsp;&nbsp;Rs.790<br>&nbsp;&nbsp;&nbsp;&nbsp;<s>Rs.1,100</s></p>
+     </div>
+     <div>
+     <img style="width:270px;height:350px;"  src="{% static 'images/handwash.jpg' %}" alt="handwash.jpg" >
+     <p>&nbsp;&nbsp;&nbsp;&nbsp;Dettol Handwash Pump<br>&nbsp;&nbsp;&nbsp;&nbsp;Original 250ml-Pack Of 2<br>&nbsp;&nbsp;&nbsp;&nbsp;Rs.830<br>&nbsp;&nbsp;&nbsp;&nbsp;<s>Rs.1000</s></p>
+     </div>
+     <div>
+      <img  style="width:270px;height:350px;" src="{% static 'images/airbuds.jpg' %}" alt="airbuds.jpg" >
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;Air buds/Bluetooth<br>&nbsp;&nbsp;&nbsp;&nbsp;Earphones Headphones...<br>&nbsp;&nbsp;&nbsp;&nbsp;Rs.799<br>&nbsp;&nbsp;&nbsp;&nbsp;<s>Rs.1,999</s></p>
+      </div>
+      <div>
+    <img style="width:270px;height:350px;" src="{% static 'images/lipstick.jpg' %}" alt="lipstick.jpg">
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Pack Of 12 Matte Lipstick<br>&nbsp;&nbsp;&nbsp;&nbsp;Multicolour Box<br>&nbsp;&nbsp;&nbsp;&nbsp;Rs.329</p>
+    </div>
+    </div>
+    <div  style=" display: flex; justify-content: space-around; align-items: center;">
+      <div>
+      <img style="width:270px;height:350px;" src="{% static 'images/mobile.jpg' %}" alt="mobile.jpg"  >
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;Double Side Silicone <br>&nbsp;&nbsp;&nbsp;&nbsp; Suction Pad Phone Hold...<br>&nbsp;&nbsp;&nbsp;&nbsp;Rs.180</p>
+     </div>
+     <div>
+     <img style="width:270px;height:350px;"  src="{% static 'images/design.jpg' %}" alt="design.jpg" >
+     <p>&nbsp;&nbsp;&nbsp;&nbsp;3D New Design Wooden<br>&nbsp;&nbsp;&nbsp;&nbsp;Wall Clock Watch For...<br>&nbsp;&nbsp;&nbsp;&nbsp;Rs.109</p>
+     </div>
+     <div>
+      <img  style="width:270px;height:350px;" src="{% static 'images/bags.jpg' %}" alt="bags.jpg" >
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;Emaralad Fashion School<br>&nbsp;&nbsp;&nbsp;&nbsp;Baxkpack   Set  of 5 school...<br>&nbsp;&nbsp;&nbsp;&nbsp;Rs.1,371<br>&nbsp;&nbsp;&nbsp;&nbsp;<s>Rs.2000</s></p>
+      </div>
+      <div>
+    <img style="width:270px;height:350px;" src="{% static 'images/watch.jpg' %}" alt="watch.jpg">
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Ocean Silicone Band<br>&nbsp;&nbsp;&nbsp;&nbsp;Strap for Apple Watch...<br>&nbsp;&nbsp;&nbsp;&nbsp;Rs.110<br>&nbsp;&nbsp;&nbsp;&nbsp;<s>Rs.350</s></p>
+    </div>
+    </div>  
+    </div>
+    <h1>Categories</h1>
+    <div style="background-color:white;display: flex; align-items: center; ">
+      <div style="margin: 15px; ">
+        <img style="width: 150px; height: 150px;" src="{% static 'images/3Dprint.jpg' %}" alt="3Dprint.jpg">
+        <p>3D Printers</p>
+         <img style="width: 150px; height: 150px;" src="{% static 'images/diningsets.jpg' %}" alt="diningsets.jpg">
+        <p>Dining Sets</p>
+      </div>
+      <div style="margin: 15px;">
+        <img style="width: 150px; height: 150px;" src="{% static 'images/boxes.jpg' %}" ait="boxes.jpg">
+        <p>Toys Boxes & <br>Organisers</p>
+         <img style="width: 150px; height: 150px;" src="{% static 'images/kits.jpg' %}" alt="kits.jpg">
+        <p> Accessory Kits</p>
+      </div>
+      <div style="margin: 15px;">
+        <img style="width: 150px; height: 150px;" src="{% static 'images/hoodies.jpg' %}" alt="hoodies.jpg">
+        <p>Hoodies & <br>Sweatshirt</p>
+         <img style="width: 150px; height: 150px;" src="{% static 'images/microphones.jpg' %}" alt="microphones.jpg">
+        <p>Microphones</p>
+      </div>
+      <div style="margin: 15px;">
+        <img style="width: 150px; height: 150px;" src="{% static 'images/simtools.jpg' %}" alt="simtools.jpg">
+        <p>SIM Tools</p>
+         <img style="width: 150px; height: 150px;" src="{% static 'images/drawing.jpg' %}" alt="drawing.jpg">
+        <p>Colouring &<br> Drawing</p>
+      </div>
+      <div style="margin: 15px;">
+        <img style="width: 150px; height: 150px;" src="{% static 'images/heatsinks.jpg' %}" alt="heatsinks.jpg">
+        <p>Heatsinks</p>
+         <img style="width: 150px; height: 150px;" src="{% static 'images/screen.jpg' %}" alt="screen.jpg">
+        <p>Screen Protection</p>
+      </div>
+       <div style="margin: 15px;">
+        <img  style="width: 150px; height: 150px;"src="{% static 'images/pots.jpg' %}" alt="pots.jpg">
+        <p>Casserole  Pots</p>
+         <img style="width: 150px; height: 150px;" src="{% static 'images/catelectric.jpg' %}" alt="Categories.jpg">
+        <p>Dod & Cat Electric<br>Clippers</p>
+      </div>
+      <div style="margin: 20px;">
+        <img  style="width: 150px; height: 150px;"src="{% static 'images/equipmentbag.jpg' %}" alt="equipmentbag.jpg">
+        <p>Equipment Bags</p>
+         <img style="width: 150px; height: 150px;" src="{% static 'images/scooter.jpg' %}" alt="scooter.jpg">
+        <p> Scooters</p>
+      </div>
+    </div>
+    <h1>JUST FOR YOU</h1>
+   <div  style="width: 1350px; background-color:antiquewhite;display: flex; align-items: center; ">
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/bottle.jpg' %}" alt="bottle">
+      <p>400 ML Insulted Water <br>Bottle  For Girls,BoysGy...<br>Rs.499<br><s>Rs.590</s></p>
+    </div>
+     <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/brush.jpg' %}" alt="brush.jpg">
+      <p>13 PCS Makeup Brush Set <br>Soft, Eyeshadow Contou....<br>Rs.349<br><s>Rs.500</s></p>
+    </div>
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/skin.jpg' %}" alt="skin.jpg">
+  <p>UPTOWN LA 41N1 Super Skin Glowing <br>Serum|5%....<br>Rs.262<br><s>Rs.400</s></p>
+    </div>
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/headphone.jpg' %}" alt="headphone.jpg">
+  <p>Wireless Headphones,P47<br>Bluetooth Foldable...<br>Rs.690</p>
+    </div>
+   </div>
+  <div  style="width: 1350px; background-color:antiquewhite;display: flex; align-items: center; ">
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/shirt.jpg' %}" alt="shirt.jpg">
+      <p>TRENDY PRINTED <br>SUMMAR SHORTS...<br>Rs.799</p>
+    </div>
+     <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/oil.jpg' %}" alt="oil.jpg">
+      <p>7 Days spray Hair Growth<br>Rs.262<br><s>Rs.400</s></p>
+    </div>
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/earrings.jpg' %}" alt="earrings.jpg">
+     <p>Earrings for Girls Fashion <br>Women's Drop Earrings...<br>Rs.339</p>
+    </div>
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/nail.jpg' %}" alt="nail.jpg">
+  <p>576 PCS Box Colorful Artifical nails<br>Acrylic Full Cover Nail....<br>Rs.198<br>811 Sold</p>
+    </div>
+   </div>
+ <div  style="width: 1350px; background-color:antiquewhite;display: flex; align-items: center; ">
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/ladiesearrings.jpg' %}" alt="ladiesearrings.jpg">
+      <p>Fashion Delicate Crystal <br>Women's Drop Earrings...<br>Rs.339</p>
+    </div>
+     <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/keychin.jpg' %}" alt="keychin.jpg">
+      <p>Julystar Bear KeyChain<br>Style Trendy LIP GLOSS...<br>Rs.209</p>
+    </div>
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/nailpolish.jpg' %}" alt="nailpolish.jpg">
+     <p>SUNISA 6 PCS Matte  <br>Liquid Peel Off Nail Polish...<br>Rs.299</p>
+    </div>
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/parfeum.jpg' %}" alt="parfeum.jpg">
+  <p>Delesh Blossom<br>Fragrance Body Mist<br>Rs.572</p>
+    </div>
+   </div>
+   <div  style="width: 1350px; background-color:antiquewhite;display: flex; align-items: center; ">
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/watchstrips.jpg' %}" alt="watchstrips.jpg">
+      <p>Ocean Loop Nylon Strap<br>for Apple Watch Ultra a...<br>Rs.420</p>
+    </div>
+     <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/womenwatch.jpg' %}" alt="womenwatch.jpg">
+      <p>HOT DEALS Luxury<br>Diamond Men Women...<br>Rs.1,499</p>
+    </div>
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/wallet.jpg' %}" alt="wallet.jpg">
+     <p>Multi Card Slots Cute<br>Women Wallets...<br>Rs.278</p>
+    </div>
+    <div style="margin: 20px;">
+      <img style="width: 300px; height: 300px;"  src="{% static 'images/shoes.jpg' %}" alt="shoes.jpg">
+  <p>Walked || Sneakers for<br>men || shoes for men||...<br>Rs.1000</p>
+    </div>
+   </div><br>
+   <div  style="  display:flex;justify-content: center;align-items: center; ">
+   <button class="button"  style=" height: 90px;width: 380px;border: 2px solid blue;color: blue; font-size: 30px; cursor: pointer;"  >LOAD MORE</button>
+   </div><br>
+   <div  class="footer-wrapper">
+    <div class="footer-colum">
+      <p>Customer Care</p>
+      <p>Help Center</p>
+      <p>How to Buy</p>
+      <p>Corporate & Bulk Purchasing</p>
+      <p>Returns & Refunds</p>
+      <p>Daraz Shop</p>
+      <p>Contact Us</p>
+      <p> Purchase Protection</p>
+      <p>Daraz Pick up Points</p>
+    </div>
+    <div  style="text-align: center;">
+   <img style="padding: 30px;" src="{% static 'images/play.jpg'%}" alt="play.jpg">
+     <img style="padding: 30px;"src="{% static 'images/app.jpg' %}" alt="app.jpg">
+     <img style="padding: 30px;"src="{% static 'images/gallery.jpg' %}" alt="gallery.jpg">
+   </div>
+    <div  class="footer-colum">
+     <p>Daraz</p>
+     <p>About Us</p>
+     <p>Digital Payments</p>
+<p>Daraz Donates</p>
+<p>Daraz </p>
+<p>Terms & Conditions</p>
+<p>Privacy Policy</p>
+<p>NTN Number : 4012118-6</p>
+<p>STRN Number : 1700401211818</p>
+<p>Online Shopping App</p>
+<p>Online Grocery Shopping</p>
+<p>Daraz Exclusive</p>
+<p>Daraz University</p>
+<p>Sell on Daraz</p>
+<p>Join Daraz Affiliate Program</p>
+    </div>
+   </div>
+   <h3>Daraz International</h3>
+<div>
+  <footer>
+    <a  style="text-decoration: none;" href="#"><img style="height: 30px; "  src="{% static 'images/ppppp.png' %}" alt="ppppp" >&nbsp;&nbsp;&nbsp;&nbsp; Pakistan </a>
+    <a  style="text-decoration: none;" href="#"><img style="height: 30px; "  src="{% static 'images/ssss.png' %}" alt="ssss" >&nbsp;&nbsp;&nbsp;&nbsp; Sri Lanka</a>
+    <a  style="text-decoration: none;" href="#"><img style="height: 30px; "  src="{% static 'images/bbbbb.png' %}" alt="bbbbb" >&nbsp;&nbsp;&nbsp;&nbsp; Bangladesh</a>
+    <a  style="text-decoration: none;" href="#"><img style="height: 30px; "  src="{% static 'images/nnnn.png' %}" alt="nnnn" >&nbsp;&nbsp;&nbsp;&nbsp; Nepal</a>
+    <a  style="text-decoration: none;" href="#"><img style="height: 30px; "  src="{% static 'images/mmmm.png' %}" alt="mmmm" >&nbsp;&nbsp;&nbsp;&nbsp; Myanmar</a>
+    <h3>Follow Us</h3>
+     <a  style="text-decoration: none;" href="#"><img style="height: 30px; "  src="{% static 'images/iiii.png' %}" alt="iiii" >&nbsp;&nbsp;&nbsp;&nbsp; Instagram</a>
+     <a  style="text-decoration: none;" href="#"><img style="height: 30px; "  src="{% static 'images/ffff.png' %}" alt="ffff" >&nbsp;&nbsp;&nbsp;&nbsp; facebook</a>
+     <a  style="text-decoration: none;" href="#"><img style="height: 30px; "  src="{% static 'images/yyyyy.png' %}" alt="yyyyy" >&nbsp;&nbsp;&nbsp;&nbsp; Youtube</a>
+     <a  style="text-decoration: none;" href="#"><img style="height: 30px; "  src="{% static 'images/gggg.png' %}" alt="gggg" >&nbsp;&nbsp;&nbsp;&nbsp; Glob</a>
+      <p style="text-align: center; font-size: larger;" >&copy; 2025 Daraz Clone </p>
+  </footer>
+</div>
+</body>
+</html>
